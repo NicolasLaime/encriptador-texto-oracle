@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./imagenes/favicon.icon" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Encriptador de texto alura</title>
+</head>
+<body>
+    <!--  HEADER -->
+    <header>
+        <a href="">
+            <img class="logo animate__animated animate__bounce" src="./imagenes/Logo-alura.png" alt="logo">
+        </a>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <section class="encriptador">
+            <textarea class="texto-encriptado animate__animated animate__fadeInUp" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="aviso">
+                <img src="./imagenes/exclamacion.png" alt="imagen aviso" class="aviso-img">
+                <p class="aviso-texto animate__animated animate__fadeInDown">Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="botones-encriptadores">
+                <button type="submit" class="btn-encriptador animate__animated animate__fadeInLeft">Encriptar</button>
+                <button type="submit" class="btn-desencriptar animate__animated animate__fadeInRight">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="card-derecha">
+            <div class="card-contenedor animate__animated animate__zoomIn">
+                <img src="./imagenes/muñeco.png" alt="muñeco" class="muñeco">
+                <p class="texto-card">Ningún mensaje fue encontrado</p>
+                <p class="texto-card-2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <textarea type="mensaje" class="comprobar-evaluar animate__animated animate__fadeInUp" readonly></textarea>
+            <button type="submit" class="btn-copiar animate__animated animate__fadeInDown">Copiar</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p class="copyright">&copy; copyright 2024 Nicolas Laime - Encriptador de texto - alura</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.js"></script>
+    <script src="./encriptador.js"></script>
+</body>
+</html>
